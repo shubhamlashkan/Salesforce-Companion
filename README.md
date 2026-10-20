@@ -30,7 +30,7 @@ I built this extension to reduce the time spent navigating through Salesforce an
 1. Clone this repository:
 
    ```bash
-   git clone <your-repository-url>
+   git clone <https://github.com/shubhamlashkan/Salesforce-Companion.git>
    ```
 
 2. Open `chrome://extensions` in Chrome.
