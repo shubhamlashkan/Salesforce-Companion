@@ -1,0 +1,45 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "open-dev-console": {
+         "description": "Open Developer Console",
+         "suggested_key": {
+            "default": "Alt+Shift+D"
+         }
+      },
+      "open-object-manager": {
+         "description": "Open Object Manager",
+         "suggested_key": {
+            "default": "Alt+Shift+O"
+         }
+      },
+      "switch-view": {
+         "description": "Switch between Lightning and Classic",
+         "suggested_key": {
+            "default": "Alt+Shift+L"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "sections.js", "content.js" ],
+      "matches": [ "*://*.my.salesforce.com/*", "*://*.lightning.force.com/*", "*://*.visual.force.com/*", "*://*.salesforce.com/*", "*://*.my.salesforce-setup.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Boost your Salesforce productivity with quick field search, API names, SOQL generator, and smart shortcuts in a sleek sidebar.",
+   "host_permissions": [ "https://*.salesforce.com/*", "https://*.force.com/*", "https://*.salesforce-setup.com/*" ],
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApu+Vphp7aJEViHrnpZfiXIgVYMlWnwFqOJdLhpuUJ7JYB6POe4BkPx7LdQkn1BfPBJfIQ92Xn33kL8yrB1Qe7nT/h80bzXGpoTUKfegcQ8+WnQpU/wiQD02qZahruIq+rD9RBNTDw/la4QiFziC6fpXZQLcntqHdooHhfVIiQvd3XC39wI29JSffqKYFNxGscNQ4ol+Jhe0r2GW1ZOWQM5uXKasCBnylyZMzJeaYe0Bzd6ugGEnoQPA/pLF/0i9AakH/s9FqWcoXE7SfxR3N1kJRfYap+u6aVR67bTpWWlRAlXpx03XryOEFglbDxKVZAaPx0DR43ql0UWTPzFZrxwIDAQAB",
+   "manifest_version": 3,
+   "name": "Salesforce Companion",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
