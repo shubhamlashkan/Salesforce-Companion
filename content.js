@@ -391,6 +391,29 @@
 }
 
 
+#sf-title .product-promo {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #dce8f5;
+  font-size: 12px;
+  font-weight: 400;
+  color: #555;
+}
+
+#sf-title .product-promo a {
+  display: inline-block;
+  margin-left: 4px;
+  color: #0176d3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#sf-title .product-promo a:hover {
+  color: #014f86;
+  text-decoration: underline;
+}
+
+
       /* Make sure scrollbars in the sidebar are visible above page content */
       #sf-nav-content::-webkit-scrollbar {
         width: 8px;
@@ -414,7 +437,13 @@
       
         <div id="sf-title">
   ⚡ Salesforce Companion
-  <small>by <a href="https://shubhamlashkan.com/" id="sf-about-link">Shubham Lashkan</a></small>
+  <small>by <a href="https://shubhamlashkan.com/" target="_blank" id="sf-about-link">Shubham Lashkan</a></small>
+  <small class="product-promo">
+    Also check out
+    <a href="https://packagexml.dev/" target="_blank" rel="noopener noreferrer">
+      PackageXML.dev ↗
+    </a>
+  </small>
 </div>
 
      
